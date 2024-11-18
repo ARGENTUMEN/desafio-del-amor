@@ -1,6 +1,0 @@
-{
-    "rewrites": [
-      { "source": "/dia:day", "destination": "/" }
-    ]
-  }
-  
