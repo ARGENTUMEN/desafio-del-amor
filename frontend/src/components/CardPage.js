@@ -9,7 +9,7 @@ const CardPage = () => {
 
     useEffect(() => {
         // Llama a la API para obtener los datos del día
-        fetch(`http://localhost:5001/api/cards/${day}`)
+        fetch(`/api/cards/${day}`)
             .then((res) => res.json())
             .then((data) => {
                 setCard(data);
