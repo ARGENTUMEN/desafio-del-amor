@@ -20,5 +20,6 @@ mongoose
 // Routes
 app.use('/api/cards', require('./routes/cards'));
 
-// Export the app for Vercel
-module.exports = app;
+// Server
+const PORT = process.env.PORT || 5001;
+app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
