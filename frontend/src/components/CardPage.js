@@ -9,7 +9,7 @@ const CardPage = () => {
 
     useEffect(() => {
         // Llama a la API para obtener los datos del día
-        fetch(`/api/cards/${day}`)
+        fetch(`https://desafio-del-amor.onrender.com/api/cards/${day}`)
             .then((res) => res.json())
             .then((data) => {
                 setCard(data);
